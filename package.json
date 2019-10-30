@@ -1,0 +1,42 @@
+{
+  "name": "openweathermap-swagger",
+  "description": "A sample API",
+  "version": "1.0.0",
+  "scripts": {
+    "lint": "tslint --project tsconfig.json",
+    "test": "npm run lint && npm run test:unit",
+    "test:unit": "jest",
+    "generate": "openapi-nodegen ./node_modules/@johndcarmichael/openweathermap-swagger/build/api_1.0.0.yml -t https://github.com/acrontum/openapi-nodegen-typescript-api-test-rig"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:acrontum/openapi-nodegen-typescript-api-test-rig.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "@types/dotenv": "^6.1.0",
+    "@zerollup/ts-transform-paths": "^1.7.3",
+    "dotenv": "^8.0.0",
+    "jest": "^24.9.0",
+    "jest-watch-typeahead": "^0.4.0",
+    "openapi-nodegen-config-helper": "1.0.4",
+    "object-reduce-by-map": "latest",
+    "request-promise": "^4.2.4",
+    "ts-jest": "^24.0.2",
+    "ts-node": "^8.4.1",
+    "tslint": "^5.19.0",
+    "ttypescript": "^1.5.7",
+    "typescript": "^3.6.2",
+    "url-join": "4.0.1",
+    "openapi-nodegen": "^3.0.4",
+    "@johndcarmichael/openweathermap-swagger": "johndcarmichael/openweathermap-swagger"
+  },
+  "dependencies": {},
+  "main": "index.js",
+  "bugs": {
+    "url": "https://github.com/johndcarmichael/openweathermap-apitest/issues"
+  },
+  "homepage": "https://github.com/johndcarmichael/openweathermap-apitest#readme"
+}
