@@ -16,14 +16,18 @@ export default interface Weather {
     sea_level?: number;
     grnd_level?: number;
   };
-  wind?: { speed?: number; deg?: number; clouds?: { all?: number } };
+  visibility?: number;
+  wind?: { speed?: number; deg?: number };
+  clouds?: { all?: number };
   dt?: number;
   sys?: {
-    message?: number;
+    id?: number;
+    type?: number;
     country?: string;
     sunrise?: number;
     sunset?: number;
   };
+  timezone?: number;
   id?: number;
   name?: string;
   cod?: number;

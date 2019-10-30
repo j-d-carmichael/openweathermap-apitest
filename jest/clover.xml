@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1572419121502" clover="3.2.0">
-  <project timestamp="1572419121502" name="All files">
+<coverage generated="1572421050705" clover="3.2.0">
+  <project timestamp="1572421050705" name="All files">
     <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2" elements="7" coveredelements="7" complexity="0" loc="5" ncloc="5" packages="1" files="1" classes="1"/>
     <file name="WeatherService.ts" path="/home/carmichael/code/open-source-projects/openweathermap-apitest/api-tests/nodegen/services/WeatherService.ts">
       <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
@@ -8,7 +8,7 @@
       <line num="3" count="1" type="stmt"/>
       <line num="11" count="1" type="stmt"/>
       <line num="17" count="1" type="stmt"/>
-      <line num="39" count="1" type="stmt"/>
+      <line num="48" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

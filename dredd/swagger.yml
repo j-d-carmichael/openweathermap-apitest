@@ -123,6 +123,8 @@ definitions:
             type: number
           grnd_level:
             type: number
+      visibility:
+        type: number
       wind:
         type: object
         properties:
@@ -130,17 +132,19 @@ definitions:
             type: number
           deg:
             type: number
-          clouds:
-            type: object
-            properties:
-              all:
-                type: number
+      clouds:
+        type: object
+        properties:
+          all:
+            type: number
       dt:
         type: number
       sys:
         type: object
         properties:
-          message:
+          id:
+            type: number
+          type:
             type: number
           country:
             type: string
@@ -148,6 +152,8 @@ definitions:
             type: number
           sunset:
             type: number
+      timezone:
+        type: number
       id:
         type: number
       name:

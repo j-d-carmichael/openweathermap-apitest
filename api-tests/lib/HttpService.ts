@@ -29,7 +29,6 @@ export default class HttpService {
         resolveWithFullResponse: true,
         url: URL,
       };
-      console.log(requestPromiseObject);
       return await requestPromise(requestPromiseObject);
     } catch (error) {
       throw error;

@@ -27,9 +27,18 @@ class WeatherService extends HttpService {
       sea_level: Number,
       grnd_level: Number
     },
-    wind: { speed: Number, deg: Number, clouds: { all: Number } },
+    visibility: Number,
+    wind: { speed: Number, deg: Number },
+    clouds: { all: Number },
     dt: Number,
-    sys: { message: Number, country: String, sunrise: Number, sunset: Number },
+    sys: {
+      id: Number,
+      type: Number,
+      country: String,
+      sunrise: Number,
+      sunset: Number
+    },
+    timezone: Number,
     id: Number,
     name: String,
     cod: Number

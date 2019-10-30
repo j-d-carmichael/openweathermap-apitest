@@ -1,24 +1,26 @@
 import objectReduceByMap from 'object-reduce-by-map';
 import WeatherService from '../nodegen/services/WeatherService';
 
-
 describe('WeatherService.weatherGet', () => {
   let response;
   beforeAll(async () => {
-    response = await WeatherService.weatherGet( /* add params here */);
+    response = await WeatherService.weatherGet(/* add params here */);
   });
 
   it('Check status code 200', () => {
     expect(response.statusCode).toBe(200);
   });
 
-  it('Check body response', (next) => {
+  it('Check body response', next => {
     try {
-      objectReduceByMap(response.body, WeatherService.weatherGetResponseFormat, { throwErrorOnAlien: true });
+      objectReduceByMap(
+        response.body,
+        WeatherService.weatherGetResponseFormat,
+        { throwErrorOnAlien: true }
+      );
       next();
     } catch (e) {
       next(e);
     }
   });
 });
-
